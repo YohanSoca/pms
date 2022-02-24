@@ -1,0 +1,114 @@
+00 # No error # # # #
+01,02,03 # Output DC link voltage too high # Voltage or frequency out of specifications at the output side # Possible feedback from generator # Recover error, Restart the unit
+04, 05 # Output DC link voltage error # Internal failure # Contact Marpower
+06 # Sum of output currents not zero # Internal failure # # Contact Marpower
+07, 08, 09 # Output DC protection phases L1, L2, L3 # # Output voltage Generator # Recover error, Restart the unit
+10, 11, 12 # Output voltage of phases L1, L2, L3 too high # Voltage or frequency out of specifications at the output side # Possible feedback from generator # Recover error, Restart the unit
+13 # Reserved # # # Contact Marpower
+14 # Output voltage of phases L1, L2, L3 too low # Output overloaded # Load conditions # Recover error, Restart the unit
+15#Input choke temperature too highFan(s) blocked. Fans Recover error, Restart the unit
+16 # Output choke temperature too high Fan(s) blocked. Fans Recover error, Restart the unit
+17 # Transformer temperature too high Fan(s) blocked. Fans Recover error, Restart the unit
+18 # Output voltage of phases L1, L2, L3 too high # Output overloaded # Load conditions # Recover error, Restart the unit
+19 # Heatsink too cold # Heatsink much colder than ambient # Temperature # Recover error
+20 # Reserved # # # Contact Marpower
+21, 22, 23 # Hardware protection activated Output overloaded Load conditions # Recover error, Restart the unit
+24, 25, 26, 27, 28#Reserved Contact Marpower####
+29, 30 ,31#Output voltage difference before and after the output contactor#Contactor failure Measurement error#Contact Marpower#
+
+32#Input DSP generated an error Error at the input side Read input DSP error and consult input error code list.
+
+33#Internal communication failure (CAN) Internal failure Contact Marpower
+
+34#Generator frequency out of range Generator frequency is out of the specified Generator Tune Generator, Recover error, Restart the unit
+
+35#Generator voltage out of range Generator voltage is out of the specified Generator Tune Generator, Recover error, Restart the unit
+
+36#Reserved#Contact Marpower# # #
+
+37#Filter capacitor discharge error# Internal failure# Recover error, Restart the unit#
+
+38#Internal communication failure (CAN) Internal failure Contact Marpower
+
+39, 40, 41#Reserved Contact Marpower
+
+42, 43, 44, 45, 46, 47, 48#I2C error Contact Marpower
+
+54#Auxiliary power supply over voltage Internal failure Contact Marpower
+
+55#Auxiliary power supply under voltage Internal failure Contact Marpower
+
+56, 57, 58, 59, 60, 61, 62, 63, 64#Reserved Contact Marpower
+
+65, 66, 67#Overload at the Output section Phase L1, L2, L3 Output phase overloaded Load conditions for that particular phase. Remove load, Recover error, Restart the unit
+
+68, 69#Reserved Contact Marpower
+
+70, 71, 72#Short circuit at the Output section Phase L1, L2, L3 Short circuit on the output Short circuit Remove short circuit, Recover error, Restart the unit
+
+73#Seamode seamless command Transfer not possible during harmonic compensation Contact Marpower
+
+74#Seamode no AC voltage No grid voltage present during harmonic compensation Grid voltage Contact Marpower
+
+75#Seamode gone while running Grid voltage removed during harmonic compensation Grid voltage Contact Marpower
+
+76#Seamode function not available Harmonic compensation not enabled Contact Marpower
+
+77, 78, 79, 80#Power section failure - Overload - Internal failure Remove overload If overload : remove overload, Recover error, and restart the unit. Else: Contact Marpower
+
+81#Reserved Contact Marpower
+
+82#I2C error Internal failure Contact Marpower
+
+83, 84, 85, 86#Reserved Contact Marpower
+
+87#Choke input under temperature Choke input temperature too low Temperature Recover error, Restart the unit
+
+88#Choke output under temperature Choke output temperature too low Temperature Recover error, Restart the unit
+
+89#Transformer under temperature Transformer temperature too low Temperature Recover error, Restart the unit
+
+90#Processor overload Internal failure Recover error, Restart the unit 91 I2C error Internal failure Contact Marpower
+
+92, 93, 94 # Reserved Contact Marpower
+
+95#Full seamless DG1 gone DG1 voltage is gone DG1 voltage Recover error, Restart the unit
+
+96#Full seamless DG2 gone DG2 voltage is gone DG2 voltage Recover error, Restart the unit
+
+97#Full seamless DG3 gone DG3 voltage is gone DG3 voltage Recover error, Restart the unit
+
+98#Full seamless DG online while SPC online Recover error, Restart the unit
+
+99#Internal error10 Internal error Contact Marpower
+
+100#Choke output N over temperature Choke output N temperature too high Fans Recover error, Restart the unit
+
+101, 102, 103, 104 # Reserved Contact Marpower 105 Output heatsink over temperature Output heatsink temperature too high Fans Recover error, Restart the unit
+
+106 # Input heatsink over temperature Input heatsink temperature too high Fans Recover error, Restart the unit
+
+107 # Ambient over temperature Ambient temperature too high Fans Recover error, Restart the unit
+
+108, 109 # Reserved Contact Marpower
+
+110 # Choke output N under temperature Choke output N temperature too low Temperature Recover error, Restart the unit
+
+111, 112, 113, 114 # Reserved Contact Marpower
+
+115 # Output heatsink under temperature Output heatsink temperature too low Temperature Recover error, Restart the unit
+
+116 # Input heatsink under temperature Input heatsink temperature too low Temperature Recover error, Restart the unit
+
+117 # Ambient under temperature Ambient temperature too low Temperature Recover error, Restart the unit
+
+118 # Reserved Contact Marpower
+
+119 Modbus timeout 
+
+120, 121, 122, 123, 124 # Reserved Contact Marpower
+
+125, 126 # Processor overload Internal failure Recover error, Restart the unit
+
+127 # Seamless transfer error Module is starting during seamless transfer Transfer process Recover error, Restart the unit
+

@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="pms">
+  <div class="header">
+    <h1>PMS</h1>
+    <img class="main-logo" src="https://nauti-tech.com/sites/default/files/inline-images/logo-dark.png" alt="">
+  </div>
+  <div class="dashboard">
+    <div class="power_source">
+      <div class="subheader">
+        <div class="status"></div>
+        <h4 id="port-cooldown-text">300s</h4>
+        <div class="name">PORT</div>
+      </div>
+      <div class="gauges">
+        <div>
+          <div>
+            <h6 id="port-volts-text">0V</h6>
+          </div>
+          <canvas id="port-volts"></canvas>
+        </div>
+        <div>
+          <div>
+            <h6 id="port-amps-text">0A</h6>
+          </div>
+          <canvas id="port-amps"></canvas>
+        </div>
+        <div>
+          <div>
+            <h6 id="port-frec-text">0Hz</h6>
+          </div>
+          <canvas id="port-frec"></canvas>
+        </div>
+        <div>
+          <div>
+            <h6 id="port-power-factor-text">0PF</h6>
+          </div>
+          <canvas id="port-power-factor"></canvas>
+        </div>
+      </div>
+      <div class="controller">
+       <div class="btns-container">
+         <button id="port-on-off" class="cntr-btns">ON</button>
+         <button id="port-auto-manual" class="cntr-btns">AUTO</button>
+         <button id="port-close-open" class="cntr-btns">OPEN</button>
+       </div>
+      </div>
+    </div>
+    <div class="power_source">
+      <div class="subheader">
+        <div class="status"></div>
+        <h4 id="stbd-cooldown-text">300s</h4>
+        <div class="name">STDB</div>
+      </div>
+      <div class="gauges">
+        <div>
+          <div>
+            <h6 id="stbd-volts-text">0V</h6>
+          </div>
+          <canvas id="stbd-volts"></canvas>
+        </div>
+        <div>
+          <div>
+            <h6 id="stbd-amps-text">0A</h6>
+          </div>
+          <canvas id="stbd-amps"></canvas>
+        </div>
+        <div>
+          <div>
+            <h6 id="stbd-frec-text">0Hz</h6>
+          </div>
+          <canvas id="stbd-frec"></canvas>
+        </div>
+        <div>
+          <div>
+            <h6 id="stbd-power-factor-text">0PF</h6>
+          </div>
+          <canvas id="stbd-power-factor"></canvas>
+        </div>
+      </div>
+      <div class="controller">
+       <div class="btns-container">
+         <button id="stbd-on-off" class="cntr-btns">ON</button>
+         <button id="stbd-auto-manual" class="cntr-btns">AUTO</button>
+         <button id="stbd-close-open" class="cntr-btns">OPEN</button>
+       </div>
+      </div>
+    </div>
+    <div class="thruster-auto-manual">
+      <div class="thruster-header">
+        <div id="thruster-status-indicator" class="thruster-status"></div>
+        <h3 class="thruster-name">BOW THRUSTER</h3>
+      </div>
+      <div class="thruster-controller">
+        <button id="thruster-auto-on-off" class="cntr-btns">MANUAL</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+{% endblock content %}

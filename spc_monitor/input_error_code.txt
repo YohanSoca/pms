@@ -1,0 +1,82 @@
+00#No error# # # #
+
+01, 02, 03 # Input DC link voltage too high # Voltage or frequency out of specifications at the input side # Input voltage,Input frequency #Recover error, Restart the unit
+
+04, 05 # Input DC link voltage error # Internal failure # # Contact Marpower
+
+06 # Sum of input currents not zero # Internal failure # # Contact Marpower
+
+07, 08, 09 # Input over current of phases L1, L2, L3 # Voltage or frequency out of specifications at the input side # Input voltage, Input frequency # Recover error,Restart the unit
+
+10, 11, 12, 14 # Input voltage of phases L1,L2, L3 too high # Voltage out of specifications at the input side # Input voltage # Recover error, Restart the unit
+
+13 # Reserved # # # Contact Marpower
+
+15 # Shore voltage stability error #  Bad input voltage # Shape of the sinus # Recover error,Restart the unit
+
+16, 17 # Transformer over current # Internal failure # # Contact Marpower
+
+18 # Ambient over temperature # Ambient temperature too high # Temperature # Recover error, Restart the unit
+
+19 # Heatsink over temperature # Heatsink temperature too high # Temperature # Recover error,Restart the unit
+
+20,21,22 # Hardware protection activated # Wrong input voltage or freqy # Input voltage, Input freq # Restart the unit,If problem persists,Input section overloaded#Internal failure#Contact Marpower
+
+23, 24, 25, 26, 27, 28 # Reserved # # Contact Marpower
+
+29, 30, 31 # Main relay differ at the sides of the voltage measurement # Internal failure # # Contact Marpower
+
+32 # Output DSP generated an error # Error at the output side # # Read output DSP error and consult output error code list.
+
+33 # Internal communication failure (CAN) # Internal failure # # Contact Marpower
+
+34 # Input voltage out of range # Wrong input voltage or frequency # Input voltage Input frequency # Recover error, Restart the unit
+
+35 # Reserved # # # Contact Marpower
+
+36, 37 # Problem with pre charging Internal failure # Contact Marpower
+
+38 # Internal communication failure (CAN) Internal failure # Contact Marpower
+
+39, 40, 41, 42, 43, 44, 45 # Reserved # # # Contact Marpower
+
+46 Problem with the calibration (Data) Internal failure Shut down converter # Contact Marpower
+
+47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64 # Reserved # # # Contact Marpower
+
+65, 66, 67 # Overload at the input section Phase L1, L2, L3 Voltage out of specifications at the input side Input voltage Recover error, Restart the unit
+
+68 # DC-DC power overload Internal failure # Contact Marpower
+
+69 # Reserved# # # Contact Marpower
+
+70, 71, 72, 73, 74, 75, 76 # Power section failure # Overload Internal failure # Remove overload # If overload : remove overload, Recover error, and restart the unit.Else: Contact Marpower
+
+77, 78, 79, 80 # Reserved # # # Contact Marpower
+
+81, 82 # I2C error # Internal failure # Contact Marpower
+
+83, 84 # Reserved # # # Contact Marpower
+
+85 # Ambient under temperature # Ambient temperature too low # Temperature # Recover error, Restart the unit
+
+86 # Heatsink under temperature # Heatsink temperature too low # Temperature  # Recover error, Restart the unit
+
+87, 88, 89 # Reserved # # # Contact Marpower
+
+90 # Processor overload # Internal failure # # Recover error, Restart the unit
+
+91 # I2C error # Internal failure # # Contact Marpower
+
+92, 93, 94, 95, 96, 97, 98 # Reserved # # # Contact Marpower
+
+99 # Serious error8 # Serious error # # Contact Marpower
+
+100 # Service mode active # To measure capacitor value # # Contact Marpower
+
+101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117 # Reserved # # # Contact Marpower
+
+118 # Ambient over temperature # Ambient temperature too high # Temperature # Recover error, Restart the unit
+
+125, 126 # Processor overload # Internal failure # # Contact Marpower
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body {
+                background-color: #367c7d;
+            }
+
+            .dashboard {
+                display: grid;
+                grid-template-columns: repeat(100, 1fr);
+                grid-template-rows: repeat(100, 1fr);
+
+            }
+
+            .power-source {
+                background-color: #060f1d;
+                margin: 5px;
+
+                border-radius: 50px;
+                border-radius: 50px;
+                background: #367c7d;
+                box-shadow:  20px 20px 60px #2e696a,
+                             -20px -20px 60px #3e8f90;
+
+            }
+
+            .port-drop-bus, .stbd-drop-bus, .shore-drop-bus {
+                border-radius: 50px;
+                border-radius: 50px;
+                background: #367c7d;
+                box-shadow:  20px 20px 60px #2e696a,
+                             -20px -20px 60px #3e8f90;
+            }
+
+            .power-source.one {
+                grid-row: 16 / 36;
+                grid-column: 10 / 40;
+            }
+
+            .port-drop-bus {
+                grid-row: 22 / 26;
+                grid-column: 36 / 60;
+            }
+
+            .stbd-drop-bus {
+                grid-row: 34 / 38;
+                grid-column: 25 / 40;
+            }
+
+            .shore-drop-bus {
+                grid-row: 50 / 54;
+                grid-column: 25 / 40;
+            }
+
+            .power-source.two {
+                grid-row: 30 / 46;
+                grid-column: 10 / 40;
+            }
+
+            .power-source.three {
+                
+            }
+
+            .main-bus {
+                grid-row: 10 / 70;
+                grid-column: 60 / 64;
+            }
+
+            .main-bus {
+                border-radius: 50px;
+                background: #367c7d;
+                box-shadow:  20px 20px 60px #2e696a,
+                             -20px -20px 60px #3e8f90;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="dashboard">
+            <div class="main-bus"></div>
+            <div class="port-drop-bus"></div>
+            <div class="stbd-drop-bus"></div>
+            <div class="shore-drop-bus"></div>
+
+            <div class="power-source one"></div>                     
+
+            <div class="power-source two"></div>
+                       
+            <div class="power-source three"></div>
+                                
+            
+        </div>
+        <script>
+
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>

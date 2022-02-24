@@ -1,0 +1,203 @@
+body {
+  background: #333;
+  margin: 0;
+  padding: 0;
+  color: wheat;
+  font-family: 'Chakra Petch', sans-serif;
+}
+  
+  .header {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+  
+
+    border-radius: 10px;
+    background: #050505;
+    box-shadow:  10px 10px 8px #0a1a1f,
+                 -21px -21px 49px #07151a;
+
+    display: flex;
+    justify-content: space-around;             
+  }
+
+  .main-logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 150px;
+}
+  
+  .header h1 {
+    font-size: 3rem;
+    color: white;
+    margin-left: 20px;
+  }
+  
+  .dashboard {
+    border-radius: 50px;
+
+
+
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .power_source, .thruster-auto-manual {
+    margin: 20px;
+    padding: 0.6rem;
+    
+    border-radius: 30px;
+    background: #1a1a1d;
+    box-shadow:  5px 5px 3px #000000,
+                 -6px -6px 3px #021218;
+  }
+
+  .thruster-controller {
+    width: 300px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .thruster-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .thruster-controller button {
+    width: 150px;
+  }
+
+  .thruster-name {
+    padding: 10px;
+    margin-right: 40px;
+
+  }
+
+  .thruster-status {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+  }
+
+  .gauges h6 {
+    text-align: center;
+  }
+
+  .gauges {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+    border-radius: 50px;
+    background: #092129;
+    box-shadow:  10px 10px 8px #02161d,
+                 -21px -21px 49px #03161d;
+  }
+
+
+.gauges canvas {
+  width: 150px;
+  
+}
+
+
+.power_source .status {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(12, 168, 147);
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  #port-cooldown-text, #stbd-cooldown-text {
+    margin-top: 5px;
+    margin-left: 30px;
+    color: rgb(239, 245, 241);
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  
+  .power_source .subheader {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .power_source .subheader .name {
+    color: white;
+    margin: 0 25px 0 10px;
+    font-size: 2rem;
+  }
+  
+  
+  .power_source .controller {
+    margin: 10px;
+    margin-top: 50px;
+  }
+
+  .btns-container {
+    border-radius: 10px;
+    background: #071b22;
+    box-shadow:  10px 10px 8px #031f29,
+                 -21px -21px 49px #03181f;
+
+    display: flex;
+    justify-content: space-around;      
+    align-items: center;       
+  }
+  
+  .power_source .gauges {
+    
+    margin: 5px;
+    border-radius: 10px;
+  }
+
+  .some {
+    color: rgb(29, 112, 80);
+  }
+  
+  .power_source .gauges h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .controller button {
+   margin: 10px;
+   width: 28%;
+  }
+
+  .cntr-btns {
+    width: 30%;
+    margin: 3px;
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+    background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+    background-color:#eae0c2;
+    border-radius:15px;
+    border:2px solid #333029;
+    display:inline-block;
+    cursor:pointer;
+    color:#505739;
+    font-family:Arial;
+    font-size:18px;
+    font-weight:bold;
+    padding:12px 16px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+  .cntr-btns:hover {
+    background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+    background-color:#a6ccae;
+  }
+  .cntr-btns:active {
+    position:relative;
+    top:3px;
+  }
+  
